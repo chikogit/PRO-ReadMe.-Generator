@@ -76,3 +76,18 @@ const questions = () => {
                   return false;
               }
           }
+        },
+        {
+            //testing - how would you test your project? Required input - ${data.test} on generateMarkdown file
+            type: 'input',
+            name: 'test',
+            message: 'How do you test your project? (Required)',
+            validate: testInput => {
+                if (testInput){
+                    return true;
+                } else {
+                    console.log("Please enter the instructions on how you would test your project.");
+                    return false;
+                }
+            }
+        },
