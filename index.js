@@ -19,3 +19,16 @@ const questions = () => {
             }
             }
         },
+        {
+            // description of project is entered and is required - shown as ${data.description} in generateMarkdown file
+            type: 'input',
+            name: 'description',
+            message: 'Now, can you please a provide a description of your project? (Required)',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log("Please enter a description for your project!");
+                    return false;
+                }
+    
