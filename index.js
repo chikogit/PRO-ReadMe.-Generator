@@ -31,4 +31,19 @@ const questions = () => {
                     console.log("Please enter a description for your project!");
                     return false;
                 }
-    
+            }
+        }
+    },
+        // table of contents is implemented already, presents data of added information and takes you to link with respective content - does not require data attachment (see generateMarkdown js file)
+    {
+        // installation of project - how would you install this project? description is required. ${data.installation} in generateMarkdown file
+        type: 'input',
+        name: 'installation',
+        message: 'How would you install your project? (Required)',
+        validate: installationInput => {
+            if (installationInput) {
+                return true;
+            } else {
+                console.log("Please enter the instructions on how you would install your project.");
+                return false;
+            }
