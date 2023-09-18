@@ -144,3 +144,12 @@ const writeToFile = (data) => {
            console.log("README file has been created!");
 });
 }
+// TODO: Create a function to initialize app - put as a promise chain functionality instead
+questions()
+.then(data => {console.log('Done!'); return data})
+    .then(data => {return generateMarkdown(data)})
+        .then(writeReadme => {
+            return writeToFile(writeReadme);
+        })
+        .catch(error => {console.log(error + "An error has popped up!")
+    })
