@@ -64,3 +64,15 @@ const questions = () => {
         }
     },
     {
+          //contributions - how would you want contributors on this project? Required input - ${data.contributions} on generateMarkdown file
+          type: 'input',
+          name: 'contributions',
+          message: 'List whether you want other users to contribute on this project. (Required)',
+          validate: contributionInput => {
+              if (contributionInput) {
+                  return true;
+              } else {
+                  console.log("Please enter the instructions on how you would want contributions on this project.");
+                  return false;
+              }
+          }
