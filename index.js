@@ -47,3 +47,20 @@ const questions = () => {
                 console.log("Please enter the instructions on how you would install your project.");
                 return false;
             }
+        }
+    },
+    {
+        // usage of project - basically, how do you use the project you created? Required input - ${data.usage} in generateMarkdown file 
+        type: 'input',
+        name: 'usage',
+        message: 'How do you use your project? (Required)',
+        validate: usageInput => {
+            if (usageInput) {
+                return true; 
+            } else {
+                console.log("Please enter the instructions on how you use the project.");
+                return false; 
+            }
+        }
+    },
+    {
