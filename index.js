@@ -136,4 +136,11 @@ const questions = () => {
         }
     ])
     }
-    
+    // TODO: Create a function to write README file 
+const writeToFile = (data) => {
+    fs.writeFile('./dist/README.md', data, err => {
+        if (err) 
+            throw err;
+           console.log("README file has been created!");
+});
+}
