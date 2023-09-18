@@ -1,0 +1,18 @@
+{
+  "name": "inquirer",
+  "version": "1.0.0",
+  "description": "Refer to: [How to create a Professional README](./readme-guide.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chikogit/PRO-ReadMe.-Generator"
+
+  },
+  "homepage": "https://github.com/chikogit/PRO-ReadMe.-Generator/blob/main/README.md",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
