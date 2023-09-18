@@ -91,3 +91,17 @@ const questions = () => {
                 }
             }
         },
+        {
+            //license questions ${data.license} and ${license} respectively - will ask users on what license best suits their project and will elect their badge to appear on the readme file. they also have the option to not add it.
+            type: 'list',
+            name: 'license',
+            message: 'What license fits with your project? Please choose one.',
+            choices: ['None', 'Apache 2.0','APM','Eclipse','GitHub','MIT','Mozilla-Public','NPM'],
+            validate: licenseSelection => {
+                if (licenseSelection){
+                    return true;
+                } else {
+                    console.log("Please choose a license for your project!");
+                    return false;
+                }
+            }
