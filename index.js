@@ -120,3 +120,20 @@ const questions = () => {
                 }
             }
         },
+        {
+            //represented is the email address - {data.email} in the generate markdown page
+            type: 'input',
+            name: 'email',
+            message: 'For the questions section, contact information is required. Please enter your email address.',
+            validate: emailInput => {
+                if (emailInput){
+                    return true;
+                } else {
+                    console.log("Please enter your email address.");
+                    return false;
+                }
+            }
+        }
+    ])
+    }
+    
