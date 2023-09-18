@@ -105,3 +105,18 @@ const questions = () => {
                     return false;
                 }
             }
+        },
+        {
+            //for the questions section, github username (which is attached to a link) and an email address is required. represented here is the github username - {data.github} in the generate markdown page
+            type: 'input',
+            name: 'github',
+            message: 'For the questions section, contact information is required. Please enter your GitHub username.',
+            validate: gitHubInput => {
+                if (gitHubInput){
+                    return true;
+                } else {
+                    console.log("Please enter your GitHub username.");
+                    return false;
+                }
+            }
+        },
