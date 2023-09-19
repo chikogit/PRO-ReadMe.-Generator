@@ -135,7 +135,7 @@ const questions = () => {
             }
         }
     ])
-    
+}
     // TODO: Create a function to write README file 
 const writeToFile = (data) => {
     fs.writeFile('./dist/README.md', data, err => {
@@ -152,4 +152,4 @@ questions()
             return writeToFile(writeReadme);
         })
         .catch(error => {console.log(error + "An error has popped up!")
-    })}
+    })
