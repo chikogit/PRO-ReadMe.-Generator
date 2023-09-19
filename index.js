@@ -32,8 +32,8 @@ const questions = () => {
                     return false;
                 }
             }
-        }
-    },
+        },
+
         // table of contents is implemented already, presents data of added information and takes you to link with respective content - does not require data attachment (see generateMarkdown js file)
     {
         // installation of project - how would you install this project? description is required. ${data.installation} in generateMarkdown file
@@ -135,7 +135,7 @@ const questions = () => {
             }
         }
     ])
-    }
+    
     // TODO: Create a function to write README file 
 const writeToFile = (data) => {
     fs.writeFile('./dist/README.md', data, err => {
@@ -152,4 +152,4 @@ questions()
             return writeToFile(writeReadme);
         })
         .catch(error => {console.log(error + "An error has popped up!")
-    })
+    })}
