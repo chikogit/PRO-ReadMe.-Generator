@@ -1,10 +1,10 @@
 
-  # Codespace
+  # Magic Matcha
 
   ![License](http://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
-  Social media
+  Small local business payment platform
 
   ## Table of Contents
   - [Description](#Description)
@@ -16,16 +16,16 @@
   - [Questions](#Questions)
 
   ## Installation
-  yes  it would be an install 
+  Different types of code and scripts
 
   ## Usage
-  to connect with other coders
+  New customer signups, payment history, order taking and payment processor.
 
   ## Contributing
-  yes others can contribute
+  Yes
 
   ## Tests
-  thru different test groups
+  Multiple test groups
 
   ## License
     
@@ -35,6 +35,6 @@
   ## Questions
   If you have any questions regarding this project, feel free to reach out to the GitHub username and/or email below:
 
-  - GitHub: https://github.com/git chiko
-  - Email address: trentokyo@gmai.com
+  - GitHub: https://github.com/Gitchiko
+  - Email address: trentokoy@gmail.com
 
